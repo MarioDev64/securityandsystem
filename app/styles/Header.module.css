@@ -1,0 +1,104 @@
+.header {
+    display: flex;
+    margin: 0 55px;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.header:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    background: #0000000d;
+}
+
+.left {
+    flex: 1;
+    text-align: left;
+}
+
+.left h1{
+    font-size: 24px;
+    margin: 0;
+}
+
+.left nav{
+    display: flex;
+    gap: 15px;
+}
+
+.left nav a{
+    color: black;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.left nav a:hover{
+    color: black;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.right {
+    flex: 1;
+    text-align: right;
+}
+
+.avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+
+.active{
+    color: #4070f4 !important;
+}
+
+@media (max-width: 768px) {
+    .left, .right {
+        display: none;
+    }
+}
+
+/* Estilos para la animación nav-link-grow-up */
+.navLink {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #031D44;
+    padding: 20px 0px;
+    margin: 0px 20px;
+    display: inline-block;
+    position: relative;
+    opacity: 0.75;
+}
+
+.navLink:hover {
+    opacity: 1;
+}
+
+.navLink::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: #031D44;
+}
+
+.navLinkGrowUp::before {
+    height: 0%;
+    width: 100%;
+    bottom: 0px;
+}
+
+.navLinkGrowUp:hover::before {
+    height: 5px;
+}

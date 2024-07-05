@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.list {
+    list-style: none;
+    counter-reset: list;
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
