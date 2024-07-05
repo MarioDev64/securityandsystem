@@ -60,9 +60,6 @@
     color: #4070f4 !important;
 }
 
-
-
-/* Estilos para la animación nav-link-grow-up */
 .navLink {
     font-weight: bold;
     font-size: 14px;
@@ -101,17 +98,24 @@
 @media (max-width: 768px) {
     .header {
         display: flex;
-        margin: 0 55px;
-        padding: 20px;
-        position: relative;
+        padding: 0;
+        margin: 0;
         margin-bottom: 35px;
     }
 
+    .left nav{
+        gap: 0;
+    }
+    
     .left nav a{
         font-size: 16px;
     }
 
     .right {
         display: none;
+    }
+
+    .navLink{
+        margin: 0 15px;
     }
 }
