@@ -42,7 +42,6 @@
     color: black;
     text-decoration: none;
     margin-top: 10px;
-    font-size: 20px;
 }
 
 .right {
@@ -61,11 +60,7 @@
     color: #4070f4 !important;
 }
 
-@media (max-width: 768px) {
-    .left, .right {
-        display: none;
-    }
-}
+
 
 /* Estilos para la animación nav-link-grow-up */
 .navLink {
@@ -101,4 +96,22 @@
 
 .navLinkGrowUp:hover::before {
     height: 5px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        margin: 0 55px;
+        padding: 20px;
+        position: relative;
+        margin-bottom: 35px;
+    }
+
+    .left nav a{
+        font-size: 16px;
+    }
+
+    .right {
+        display: none;
+    }
 }
